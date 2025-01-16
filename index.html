@@ -1,45 +1,362 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-        <link href="style.css" rel="stylesheet">
-        <script src="script.js"></script>
-    </head>
-    <body>
-      <div class="hero-section">
-        <nav class="navbar fixed-top bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">My Logo</a>
-            <ul class="nav justify-content-end">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/e49dd6a553.js" crossorigin="anonymous"></script>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+      body, .end{
+        background-color:#f4f4ff ;
+        font-family: 'Poppins';
+      }
+      .navbar, .end-about, .end-contact{
+        background-color:#fff;
+      }
+      .navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+      }
+      .end-about{
+        border-top-right-radius: 200px;
+      }
+      .about-section{
+        border-top-right-radius: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#" id="logo">My Logo</a>
+        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="container">
+        <h1>I'm Ayomide. <br>Glad to see you!</h1>
+        <p>I'm a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+        <span class="connect">LET'S CONNECT</span>
+        <div class="social-icons">
+          <a href="https://x.com/King_Ay_J?t=eS_xjBqJXU5PDhIeoWDBLQ&s=08"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://linkedin.com/in/ayo-okunubi-6b8a26233"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:ayomidejokunubi@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://github.com/AyoOkunubi"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/king_ay_j/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/08100636109"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </header>
+    <section class="container my-5" id="portfolio">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="project-card">
+            <div class="col-md-6">
+              <img alt="Nature project image" src="img/Snapshoot Portfolio.png"/>
+            </div>
+            <div class="col-md-6">
+              <h3>Tonic</h3>
+              <span class="space"><p><strong>CANOPY</strong>• Back End Dev • 2015</p></span>
+              <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+              <div class="langbtn">
+                <button class="btn btn-outline-secondary btn-sm" type="button">HTML</button>
+                <button class="btn btn-outline-secondary btn-sm" type="button">CSS</button>
+                <button class="btn btn-outline-secondary btn-sm" type="button">JavaScript</button>
+              </div>
+              <button class="btn btn-primary mt-3" data-bs-target="#tonicModal" data-bs-toggle="modal" type="button" id="button">See project</button>
+            </div>
           </div>
-        </nav>
-        <div class="hero">
-          <h1 class="mt-5">I’m Alexandra.<br>Glad to see you!</h1>
-          <p>I’m a software developer! I can help you build a product, feature, or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-      
-          <div class="social-icons">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-medium"></i></a>
-              <a href="#"><i class="bi bi-github"></i></a>
-              <a href="#"><i class="bi bi-peace"></i></a>
+        </div>
+        <div class="col-md-12">
+          <div class="project-card">
+            <div class="col-md-6 order-md-2">
+              <img alt="Professional art printing project image" src="img/Snapshoot Portfolio 1.png"/>
+            </div>
+            <div class="col-md-6 order-md-1">
+              <h3>Multi-Post Stories</h3>
+              <p><strong>FACEBOOK</strong>• Full Stack Dev • 2015</p>
+              <p>Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
+              <div class="langbtn">
+                <button class="btn btn-outline-secondary btn-sm" type="button">HTML</button>
+                <button class="btn btn-outline-secondary btn-sm" type="button">CSS</button>
+                <button class="btn btn-outline-secondary btn-sm" type="button">JavaScript</button>
+                <button class="btn btn-outline-secondary btn-sm" type="button">Ruby On Rails</button>
+              </div>
+              <button class="btn btn-primary mt-3" data-bs-target="#multiPostStoriesModal" data-bs-toggle="modal" type="button" id="button">See project</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="project-card">
+            <div class="col-md-6">
+              <img alt="Facebook 360 project image" src="img/Snapshoot Portfolio 2.png"/>
+            </div>
+            <div class="col-md-6">
+              <h3>Facebook 360</h3>
+              <p><strong>FACEBOOK</strong>• Full Stack Dev • 2015</p>
+              <p>Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
+              <div class="langbtn">
+                <button class="btn btn-outline-secondary btn-sm" type="button">HTML</button>
+                <button class="btn btn-outline-secondary btn-sm" type="button">CSS</button>
+                <button class="btn btn-outline-secondary btn-sm" type="button">JavaScript</button>
+                <button class="btn btn-outline-secondary btn-sm" type="button">Ruby On Rails</button>
+              </div>
+              <button class="btn btn-primary mt-3" data-bs-target="#facebook360Modal" data-bs-toggle="modal" type="button" id="button">See project</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="project-card">
+            <div class="col-md-6 order-md-2">
+              <img alt="Uber navigation project image" src="img/Snapshoot Portfolio 3.png"/>
+            </div>
+            <div class="col-md-6 order-md-1">
+              <h3>Uber Navigation</h3>
+              <p><strong>UBER</strong>• Lead Developer • 2018</p>
+              <p>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
+              <div class="langbtn">
+                <button class="btn btn-outline-secondary btn-sm" type="button">HTML</button>
+                <button class="btn btn-outline-secondary btn-sm" type="button">CSS</button>
+                <button class="btn btn-outline-secondary btn-sm" type="button">JavaScript</button>
+                <button class="btn btn-outline-secondary btn-sm" type="button">Ruby On Rails</button>
+              </div>
+              <button class="btn btn-primary mt-3" data-bs-target="#uberNavigationModal" data-bs-toggle="modal" type="button" id="button">See project</button>
+            </div>
           </div>
         </div>
       </div>
-    </body>
+    </section>
+    <div class="end">
+      <div class="end-about">
+        <section class="about-section container" id="about">
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <h2>About Myself</h2>
+              <p>I'm a software developer with a passion for creating beautiful and functional websites. I have experience in various technologies and frameworks, and I'm always eager to learn more and take on new challenges.</p>
+              <span class="connect">LET'S CONNECT</span>
+              <div class="social-icons" id="icons">
+                <a href="https://x.com/King_Ay_J?t=eS_xjBqJXU5PDhIeoWDBLQ&s=08"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://linkedin.com/in/ayo-okunubi-6b8a26233"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:ayomidejokunubi@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/AyoOkunubi"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/king_ay_j/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/08100636109"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+              <button class="btn btn-primary mt-3" type="button" id="button">Get My Resume</button>
+            </div>
+            <div class="col-md-6">
+              <div class="accordion" id="skillsAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button aria-controls="collapseOne" aria-expanded="true" class="accordion-button" data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button">Languages</button>
+                  </h2>
+                  <div aria-labelledby="headingOne" class="accordion-collapse collapse show" data-bs-parent="#skillsAccordion" id="collapseOne">
+                    <div class="accordion-body">
+                      <div class="skills-container">
+                        <div class="skill-box">
+                          <img alt="HTML logo" src="img/Ellipse 1 (1).png"/>
+                          <span>HTML</span>
+                        </div>
+                        <div class="skill-box">
+                          <img alt="CSS logo" src="img/Ellipse 1 (2).png"/>
+                          <span>CSS</span>
+                        </div>
+                        <div class="skill-box">
+                          <img alt="JavaScript logo" src="img/Ellipse 1.png"/>
+                          <span>JavaScript</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button aria-controls="collapseTwo" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">Frameworks</button>
+                  </h2>
+                  <div aria-labelledby="headingTwo" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion" id="collapseTwo">
+                    <div class="accordion-body">
+                      <div class="skills-container">
+                        <div class="skill-box">
+                          <img alt="React logo" src="img/react.svg"/>
+                          <span>React</span>
+                        </div>
+                        <div class="skill-box">
+                          <img alt="Bootstrap logo" src="img/Bootstrap_logo.png"/>
+                          <span>Bootstrap</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button aria-controls="collapseThree" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">Skills</button>
+                  </h2>
+                  <div aria-labelledby="headingThree" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion" id="collapseThree">
+                    <div class="accordion-body">
+                      <div class="skills-container">
+                        <div class="skill-box">
+                          <img alt="Web Development logo" src="img/web-design.png"/>
+                          <span>Web Development</span>
+                        </div>
+                        <div class="skill-box">
+                          <img alt="Full STack logo" src="img/Full-STack.png"/>
+                          <span>Full Stack Software Development</span>
+                        </div>
+                        <div class="skill-box">
+                          <img alt="Backend logo" src="img/Backend.png"/>
+                          <span>Back End Software Development</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="end-contact">
+        <section class="contact-section" id="contact">
+          <div class="container">
+            <h2>Contact me</h2>
+            <p>If you have an application you are interested in Developing,</br> A Feature that you need Built or <br>A Project that requires coding, I'd Love to Help with It.</p>
+            <form>
+              <input class="form-control" placeholder="Your name" type="text"/>
+              <input class="form-control" placeholder="Your email" type="email"/>
+              <textarea class="form-control" placeholder="Write your message here..." rows="5"></textarea>
+              <button type="submit">Get In Touch</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Modals -->
+    <div aria-hidden="true" aria-labelledby="tonicModalLabel" class="modal fade" id="tonicModal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="tonicModalLabel">Tonic</h5>
+            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>CANOPY</strong>• Back End Dev • 2015</p>
+            <img alt="Tonic project detailed image" class="img-fluid" src="img/Snapshoot Portfolio.png" width="800" height="400"/>
+            <div class="row mt-4">
+              <div class="col-md-8">
+                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. This project involved creating a backend system for a personalized reading platform. The system was designed to handle large volumes of data and provide users with a seamless experience.</p>
+              </div>
+              <div class="col-md-4">
+                <div>
+                  <button class="btn btn-outline-secondary btn-sm mb-2" type="button">HTML</button>
+                  <button class="btn btn-outline-secondary btn-sm mb-2" type="button">CSS</button>
+                  <button class="btn btn-outline-secondary btn-sm mb-2" type="button">JavaScript</button>
+                </div>
+                <button class="btn btn-primary" type="button">See Live</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div aria-hidden="true" aria-labelledby="multiPostStoriesModalLabel" class="modal fade" id="multiPostStoriesModal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="multiPostStoriesModalLabel">Multi-Post Stories</h5>
+            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>FACEBOOK</strong>• Full Stack Dev • 2015</p>
+            <img alt="Multi-Post Stories project detailed image" class="img-fluid" src="img/Snapshoot Portfolio 1.png" width="800" height="400"/>
+            <div class="row mt-4">
+              <div class="col-md-8">
+                <p>Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
+              </div>
+              <div class="col-md-4">
+                <div>
+                  <button class="btn btn-outline-secondary btn-sm mb-2" type="button">HTML</button>
+                  <button class="btn btn-outline-secondary btn-sm mb-2" type="button">CSS</button>
+                  <button class="btn btn-outline-secondary btn-sm mb-2" type="button">JavaScript</button>
+                  <button class="btn btn-outline-secondary btn-sm mb-2" type="button">Ruby On Rails</button>
+                </div>
+                <button class="btn btn-primary" type="button">See Live</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div aria-hidden="true" aria-labelledby="facebook360ModalLabel" class="modal fade" id="facebook360Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="facebook360ModalLabel">Facebook 360</h5>
+            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>FACEBOOK</strong>• Full Stack Dev • 2015</p>
+            <img alt="Facebook 360 project detailed image" class="img-fluid" src="img/Snapshoot Portfolio 2.png" width="800" height="400"/>
+            <div class="row mt-4">
+              <div class="col-md-8">
+                <p>Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
+              </div>
+              <div class="col-md-4">
+                <div>
+                  <button class="btn btn-outline-secondary btn-sm mb-2" type="button">HTML</button>
+                  <button class="btn btn-outline-secondary btn-sm mb-2" type="button">CSS</button>
+                  <button class="btn btn-outline-secondary btn-sm mb-2" type="button">JavaScript</button>
+                  <button class="btn btn-outline-secondary btn-sm mb-2" type="button">Ruby On Rails</button>
+                </div>
+                <button class="btn btn-primary" type="button">See Live</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div aria-hidden="true" aria-labelledby="uberNavigationModalLabel" class="modal fade" id="uberNavigationModal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="uberNavigationModalLabel">Uber Navigation</h5>
+            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>UBER</strong>• Lead Developer • 2018</p>
+            <img alt="Uber Navigation project detailed image" class="img-fluid" src="img/Snapshoot Portfolio 3.png" width="800" height="400"/>
+            <div class="row mt-4">
+              <div class="col-md-8">
+                <p>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
+              </div>
+              <div class="col-md-4">
+                <div>
+                  <button class="btn btn-outline-secondary btn-sm mb-2" type="button">HTML</button>
+                  <button class="btn btn-outline-secondary btn-sm mb-2" type="button">CSS</button>
+                  <button class="btn btn-outline-secondary btn-sm mb-2" type="button">JavaScript</button>
+                  <button class="btn btn-outline-secondary btn-sm mb-2" type="button">Ruby On Rails</button>
+                </div>
+                <button class="btn btn-primary" type="button">See Live</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>    
 </html>
