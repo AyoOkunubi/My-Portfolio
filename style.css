@@ -52,6 +52,7 @@ html{
     color:#7F8CFF;
 }
 .langbtn button{
+    margin-bottom: 10px;
     border:0;
     border-radius: 10px;
     color: #6070FF;
@@ -119,16 +120,18 @@ html{
 }
 
 #button {
+    border:1px solid;
     font-weight: 500;
     font-size: 17px;
     background-color: transparent;
     color:#396DF2;
+    margin-bottom: 10px;
 }
 #button:hover{
-    border:0;
-    background-color: #007bff;
+    border: 1px solid transparent;
+    background-color: #396DF2;
     color: #fff;
-    box-shadow: 0 0 10px #007BFF, 0 0 20px #007BFF;
+    box-shadow: 0 0 10px #396DF2, 0 0 10px #396DF2;
     transition: box-shadow 0.3s ease;
 }
 /* Contact Section Styles */
